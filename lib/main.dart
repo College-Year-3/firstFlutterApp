@@ -16,15 +16,26 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: IconButton(
-        // RaisedButton.icon(
-          onPressed: () {
-            print('You clicked me');
-          },
-          
-          icon: Icon( Icons.alternate_email),
-          color: Colors.amber,
+      body: Padding(    // best to use Container and do changes to margin and padding inside
+        padding: EdgeInsets.all(90.0),
+        child: Text('Hello'),
+      ),
+      // Container( // taks up whole screen if nothing there
+      //   // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+      //   padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0), // inside containger
+      //   margin: EdgeInsets.all(30.0),                 // around container
+
+      //   color: Colors.grey[400],
+      //   child: Text('hello'),
+      // ),
+      //  Center(
+      //   child: IconButton(
+      //   // RaisedButton.icon(
+      //     onPressed: () {
+      //       print('You clicked me');
+      //     },
+      //     icon: Icon( Icons.alternate_email),
+      //     color: Colors.amber,
           //   Icons.mail
           // ),
           // label: Text('mail me'),
@@ -34,12 +45,12 @@ class Home extends StatelessWidget {
           // Icons.airport_shuttle,
           // color: Colors.lightBlue,
           // size: 50.0
-        )
+        //)
           // child: Image.asset('assets/galaxy2.jpg'),
           // child: Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/LH_95.jpg/330px-LH_95.jpg'),
           //image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/LH_95.jpg/330px-LH_95.jpg'),
           // image: AssetImage('assets/galaxy.jpg'),
-        ),
+     //   )
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('click'),
