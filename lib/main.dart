@@ -16,10 +16,49 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Padding(    // best to use Container and do changes to margin and padding inside
-        padding: EdgeInsets.all(90.0),
-        child: Text('Hello'),
-      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Text('hello'),
+              Text('world')
+            ],
+          ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          color: Colors.green,
+          child: Text('one'),
+        ),
+         Container(
+          padding: EdgeInsets.all(30.0),
+          color: Colors.white,
+          child: Text('two')
+        ),
+         Container(
+          padding: EdgeInsets.all(40.0),
+          color: Colors.orange,
+          child: Text('three')
+        )
+        ] ,)
+      //  Row(  
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+      //   crossAxisAlignment: CrossAxisAlignment.start, // best to use Container and do changes to margin and padding inside
+      //   children: <Widget>[
+      //     Text('Hello world'),
+      //     FlatButton(
+      //       onPressed: (){},
+      //       color: Colors.amber,
+      //       child: Text('click me')
+      //       ),
+      //       Container(
+      //         color: Colors.cyan,
+      //         padding: EdgeInsets.all(30.0),
+      //         child: Text('inside container'),
+      //       )
+      //   ]
+      // ),
       // Container( // taks up whole screen if nothing there
       //   // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
       //   padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0), // inside containger
@@ -51,6 +90,7 @@ class Home extends StatelessWidget {
           //image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/LH_95.jpg/330px-LH_95.jpg'),
           // image: AssetImage('assets/galaxy.jpg'),
      //   )
+     ,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('click'),
